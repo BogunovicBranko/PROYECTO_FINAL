@@ -6,13 +6,13 @@ De que es la Pagina:
 
 Esta es a uso publico ya que todos pueden agregar o buscar
 
-___________________________________________
-                                           |
-Al arrancar el server el inicio se ve en   |
-                                           |
-/Entrega1/inicio                           |
-                                           |
-___________________________________________|
+_____________________________________________
+                                          
+Al arrancar el server el inicio se ve en   
+                                           
+/Entrega1/inicio                          
+                                         
+_____________________________________________
 
 Se incorporo la funcion de los botones
 
