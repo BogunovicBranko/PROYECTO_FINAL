@@ -1,0 +1,25 @@
+{% extends "AppCoder/index.html" %}
+
+{% block contenido %}
+
+<br />
+<br />
+<h1 class="text-black fs-3 fw-bolder">Buscar Estadios</h1>
+<br />
+<br />
+<form action="{% url 'Entrega1-resultado-Estadios' %}" method="get">
+
+    <p>
+        Nombre <input type="text" name="nombre" >
+        <input type="submit" value="Buscar">
+    </p>
+
+
+</form>
+
+<br />
+<br />
+
+<A HREF="{% url 'Entrega1-Estadios' %}"> Volver a Estadios </A>
+
+{% endblock %}

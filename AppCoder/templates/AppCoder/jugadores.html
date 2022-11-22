@@ -1,0 +1,44 @@
+{% extends "AppCoder/index.html" %}
+
+
+{% block contenido %}
+
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2>Listado de Jugadores</h2>
+                <p class="lead">Jugadores del equipo.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <!-- <th scope="col">ID</th> -->
+        <th scope="col">nombre</th>
+        <th scope="col">apellido</th>
+        <th scope="col">fecnac</th>
+        <th scope="col">equipo</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for  jugador in jugadores %}
+
+      <tr>
+        <!-- <th scope="row">{{jugadores.id}}</th> -->
+        <td>{{jugador.nombre}}</td>
+        <td>{{jugador.apellido}}</td>
+        <td>{{jugador.fecnac}}</td>
+        <td>{{jugador.Equipo}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <A HREF="{% url 'Entrega1-agregar-jugador' %}"> Agregar Jugador </A>&nbsp<A HREF="{% url 'Entrega1-buscar-jugador' %}"> Buscar Jugador </A>
+
+{% endblock %}

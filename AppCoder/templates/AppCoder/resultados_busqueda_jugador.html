@@ -1,0 +1,22 @@
+{% extends "AppCoder/index.html" %}
+
+{% block contenido %}
+
+<br />
+<br />
+<h1 class="text-black fs-3 fw-bolder">Jugadores</h1>
+<br />
+<br />
+
+<ul>
+
+    {% for jugador in jugadores %}
+        <li> {{jugador.nombre}} - {{jugador.apellido}} - {{jugador.fecnac}} - {{jugador.Equipo}}  </li>
+    {% endfor %}
+</ul>
+
+
+
+
+<A HREF="{% url 'Entrega1-jugadores' %}"> Volver a Jugadores </A>
+{% endblock %}

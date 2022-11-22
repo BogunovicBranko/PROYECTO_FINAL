@@ -1,0 +1,22 @@
+{% extends "AppCoder/index.html" %}
+
+{% block contenido %}
+
+<br />
+<br />
+<h1 class="text-black fs-3 fw-bolder">Estadios</h1>
+<br />
+<br />
+
+<ul>
+
+    {% for estadio in estadios %}
+        <li> {{estadio.nombre}} - {{estadio.Capacidad}} </li>
+    {% endfor %}
+</ul>
+
+
+
+
+<A HREF="{% url 'Entrega1-Estadios' %}"> Volver a Estadios </A>
+{% endblock %}

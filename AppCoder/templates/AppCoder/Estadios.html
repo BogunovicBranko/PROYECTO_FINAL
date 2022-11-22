@@ -1,0 +1,39 @@
+{% extends "AppCoder/index.html" %}
+
+
+{% block contenido %}
+
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2>Listado de Estadios</h2>
+                <p class="lead">Estadios.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <!-- <th scope="col">ID</th> -->
+        <th scope="col">nombre</th>
+        <th scope="col">Capacidad</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for  estadio in estadios %}
+
+      <tr>
+        <!-- <th scope="row">{{estadios.id}}</th> -->
+        <td>{{estadio.nombre}}</td>
+        <td>{{estadio.Capacidad}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <A HREF="{% url 'Entrega1-agregar-Estadios' %}"> Agregar Estadio </A>&nbsp<A HREF="{% url 'Entrega1-buscar-Estadios' %}"> Buscar Estadios </A>
+  {% endblock %}

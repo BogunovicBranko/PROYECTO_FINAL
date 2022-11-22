@@ -1,0 +1,35 @@
+{% extends "AppCoder/index.html" %}
+
+
+{% block contenido %}
+
+<form action="" method="post">
+
+    {% csrf_token %}
+    <br />
+    <br />
+    <h1 class="text-black fs-3 fw-bolder">Agregar nuevo jugador</h1>
+    <br />
+    <br />
+
+    <p>
+        Nombre <input type="text" name="nombre" >
+    </p>
+    <p>
+        Apellido <input type="text" name="apellido" >
+    </p>
+    <p>
+        fecnac <input type="text" name="fecnac" >
+    </p>
+    <p>
+        Equipo <input type="text" name="Equipo" >
+    </p>
+    <br />
+    <br />
+    <input type="submit" value="Agregar jugador">
+
+</form>
+<br />
+<br />
+<A HREF="{% url 'Entrega1-jugadores' %}"> Volver a jugadores </A>
+{% endblock %}

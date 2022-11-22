@@ -1,0 +1,22 @@
+{% extends "AppCoder/index.html" %}
+
+{% block contenido %}
+
+<br />
+<br />
+<h1 class="text-black fs-3 fw-bolder">Equipos</h1>
+<br />
+<br />
+
+<ul>
+
+    {% for equipo in equipos %}
+        <li> {{equipo.nombre}} - {{equipo.colorcamiseta}} - {{equipo.totaljugadores}} </li>
+    {% endfor %}
+</ul>
+
+
+
+
+<A HREF="{% url 'Entrega1-Equipos' %}"> Volver a Equipos </A>
+{% endblock %}
